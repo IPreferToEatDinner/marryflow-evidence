@@ -37,7 +37,7 @@ through a time-limited read-only invitation on request.
 | `data/summary.txt` | Generation metadata |
 | `docs/PRD-2026-01-13.md` | Product requirements document, version 1.0, dated 2026-01-13, first committed 2026-01-14 |
 | `verify.txt` | SHA-256 checksum of every file in `data/` |
-| `screenshots/` | Repository settings, commit activity and CI pages |
+| `screenshots/commits-list.jpg` | Full commit list as rendered by GitHub; every hash matches `data/commits-marryflow-web.txt` |
 
 ## 3. Repository timeline
 
@@ -94,6 +94,10 @@ a court-appointed expert on request, and its checksum allows verification that
 it has not been altered.
 
 `verify.txt` records the checksum of each published data file.
+
+The commit hashes visible in `screenshots/commits-list.jpg` can be matched
+one-to-one against `data/commits-marryflow-web.txt`, so the screenshot and the
+transcript corroborate each other.
 
 ## 7. Scope and limitations
 
