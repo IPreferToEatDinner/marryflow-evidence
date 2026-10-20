@@ -1,0 +1,282 @@
+--- 2f2523de01d941bf72fb7c49ff0a12922b034dc6 | 2026-01-11 | Initial commit from Create Next App
+41	0	.gitignore
+36	0	README.md
+18	0	eslint.config.mjs
+7	0	next.config.ts
+26	0	package.json
+3615	0	pnpm-lock.yaml
+5	0	pnpm-workspace.yaml
+7	0	postcss.config.mjs
+1	0	public/file.svg
+1	0	public/globe.svg
+1	0	public/next.svg
+1	0	public/vercel.svg
+1	0	public/window.svg
+-	-	src/app/favicon.ico
+26	0	src/app/globals.css
+34	0	src/app/layout.tsx
+65	0	src/app/page.tsx
+34	0	tsconfig.json
+
+--- 191e3949f54797b2d3c4c152b614f87d3c2e120c | 2026-01-11 | chore: 升级pnpm锁文件并精简依赖结构与元数据
+2309	1916	pnpm-lock.yaml
+
+--- 8ad325b6327b9734e1b18ddc6f1bb381e99da7d5 | 2026-01-11 | feat: 初始化组件库配置并添加 UI 相关依赖
+22	0	components.json
+14	0	"demo/UI UX Pro Max - Design Intelligence for Claude Code (2026_1_11 17\357\274\23240\357\274\23231).html"
+8	1	package.json
+398	0	pnpm-lock.yaml
+25	0	src/app/(home)/page.tsx
+152	13	src/app/globals.css
+15	9	src/app/layout.tsx
+0	65	src/app/page.tsx
+75	0	src/components/home/AboutSection.tsx
+78	0	src/components/home/ArtistsSection.tsx
+108	0	src/components/home/CollectionsSection.tsx
+100	0	src/components/home/ExhibitionsSection.tsx
+129	0	src/components/home/Footer.tsx
+83	0	src/components/home/HeroSection.tsx
+95	0	src/components/home/Navbar.tsx
+7	0	src/components/home/index.ts
+62	0	src/components/ui/button.tsx
+168	0	src/components/ui/navigation-menu.tsx
+6	0	src/lib/utils.ts
+
+--- 8bdee31d3795d5f6d6edd808d3378b79e6e340b8 | 2026-01-11 | refactor: 统一移除圆角样式并优化边框与按钮样式
+3	2	src/app/globals.css
+8	8	src/components/home/AboutSection.tsx
+2	2	src/components/home/ArtistsSection.tsx
+1	1	src/components/home/CollectionsSection.tsx
+2	3	src/components/home/ExhibitionsSection.tsx
+7	7	src/components/home/HeroSection.tsx
+2	8	src/components/home/Navbar.tsx
+21	20	src/components/ui/button.tsx
+
+--- ea46f01ea7fe2b3e85ad507182d3c3e5697541be | 2026-01-11 | refactor: 调整按钮及布局样式并修复类名错误
+3	0	.prettierrc
+2	0	package.json
+72	0	pnpm-lock.yaml
+22	23	src/components/home/HeroSection.tsx
+4	1	src/components/home/Navbar.tsx
+2	2	src/components/ui/button.tsx
+
+--- 83bb6cd9df19087a65e9b44ceadbe57451c503b2 | 2026-01-11 | feat: 新增RotatingText组件及motion依赖支持动画轮播
+3	1	components.json
+1	0	package.json
+60	0	pnpm-lock.yaml
+19	7	src/components/home/HeroSection.tsx
+272	0	src/components/ui/RotatingText.tsx
+
+--- 3a5fdab8a78209601c2ac832e0f4c069d1544aac | 2026-01-11 | feat: 为 HeroSection 添加滚动驱动的 3D 旋转动画
+60	34	src/components/home/HeroSection.tsx
+
+--- 9ac04b32dcc08ba21e87cc4c113a11e138ea47ac | 2026-01-14 | feat: 新增展览交互与婚礼演示仪表盘组件
+165	33	src/components/home/ExhibitionsSection.tsx
+501	0	src/components/home/HeroSection/DemoDashboard.tsx
+4	31	src/components/home/{HeroSection.tsx => HeroSection/index.tsx}
+1	0	src/components/home/index.ts
+356	0	src/doc/prd.md
+
+--- f5405f0a7fe56967faeb62058c851a62d48ec66f | 2026-01-14 | chore: 删除 demo 目录下的旧版 UI UX Pro Max 演示 HTML 文件
+0	14	"demo/UI UX Pro Max - Design Intelligence for Claude Code (2026_1_11 17\357\274\23240\357\274\23231).html"
+
+--- b093ebb3b757a9c6daaf31999ac82cb4f8c6ac2e | 2026-01-14 | chore: 优化组件样式类名顺序与文案表述
+2	2	src/components/home/ExhibitionsSection.tsx
+13	16	src/components/home/Navbar.tsx
+
+--- 4a7d75b7e4f8f2ecbe7d2c71a66df3fb3ca8ae2c | 2026-01-14 | feat: 引入 Swiper 轮播并重构艺术家展示交互
+1	0	package.json
+9	0	pnpm-lock.yaml
+196	41	src/components/home/ArtistsSection.tsx
+
+--- 6bdf39572efd64950ea0c4174d4b15a414128bdd | 2026-01-15 | feat: 首页替换区块组件并新增服务、特性与评价展示
+7	7	src/app/(home)/page.tsx
+1	1	src/components/home/{ArtistsSection.tsx => FeaturesSection.tsx}
+1	1	src/components/home/{ExhibitionsSection.tsx => ServicesSection.tsx}
+15	15	src/components/home/{CollectionsSection.tsx => TestimonialsSection.tsx}
+3	3	src/components/home/index.ts
+
+--- 661e77e048677eeeb6921534f8c2676d5e50c480 | 2026-01-15 | refactor: 调整首页组件顺序并优化图标与徽章样式
+1	1	src/app/(home)/page.tsx
+17	5	src/components/home/FeaturesSection.tsx
+
+--- 0fd2fe2dca39ac283348101693d08d42e41c22d3 | 2026-01-15 | feat: 新增首页评价区滚动展示与文案优化
+34	0	src/app/globals.css
+1	1	src/components/home/FeaturesSection.tsx
+3	3	src/components/home/ServicesSection.tsx
+0	108	src/components/home/TestimonialsSection.tsx
+88	0	src/components/home/TestimonialsSection/ScrollingRow.tsx
+169	0	src/components/home/TestimonialsSection/index.tsx
+
+--- 8b760068804817cb2e5834aec59f5042fed1e097 | 2026-01-23 | chore: 升级依赖包至最新版本
+9	9	package.json
+283	283	pnpm-lock.yaml
+1	1	src/components/home/Navbar.tsx
+
+--- e11974d1c3b22c3aa914eb5620a11fec4cebfb66 | 2026-01-23 | feat: 调整产品页面为上线前预热，改文案与展示内容
+9	9	src/components/home/AboutSection.tsx
+1	1	src/components/home/FeaturesSection.tsx
+5	1	src/components/home/HeroSection/index.tsx
+3	3	src/components/home/Navbar.tsx
+8	9	src/components/home/ServicesSection.tsx
+45	131	src/components/home/TestimonialsSection/index.tsx
+
+--- 2a837db031f42b6f9cfc9d89b1ed0bc936ec02a1 | 2026-01-23 | build: 启用 Next.js standalone 模式支持独立部署
+66	0	Dockerfile
+1	0	next.config.ts
+
+--- 4ce5b2e2e32f6d807ee3e187d485469908c22507 | 2026-01-23 | refactor: 重构 FeaturesSection 响应式布局与卡片样式
+21	21	src/components/home/FeaturesSection.tsx
+
+--- 1274a247e1a80816a26c4fecc0308600732b166c | 2026-01-23 | feat: 新增一键推送GitHub与Gitee的gitpush脚本
+65	0	gitpush.sh
+
+--- 9ef81a497a1a159f358e8093a5316f5bc1935673 | 2026-01-26 | chore: 升级多依赖版本并同步快照
+21	21	pnpm-lock.yaml
+
+--- be66d2900735640c3cca6b9b5551345cd03b3b43 | 2026-01-27 | feat: 新增Remotion最佳实践文档及动画、图表组件
+45	0	.codebuddy/skills/remotion-best-practices/SKILL.md
+86	0	.codebuddy/skills/remotion-best-practices/rules/3d.md
+29	0	.codebuddy/skills/remotion-best-practices/rules/animations.md
+78	0	.codebuddy/skills/remotion-best-practices/rules/assets.md
+173	0	.codebuddy/skills/remotion-best-practices/rules/assets/charts-bar-chart.tsx
+100	0	.codebuddy/skills/remotion-best-practices/rules/assets/text-animations-typewriter.tsx
+108	0	.codebuddy/skills/remotion-best-practices/rules/assets/text-animations-word-highlight.tsx
+172	0	.codebuddy/skills/remotion-best-practices/rules/audio.md
+104	0	.codebuddy/skills/remotion-best-practices/rules/calculate-metadata.md
+75	0	.codebuddy/skills/remotion-best-practices/rules/can-decode.md
+58	0	.codebuddy/skills/remotion-best-practices/rules/charts.md
+141	0	.codebuddy/skills/remotion-best-practices/rules/compositions.md
+126	0	.codebuddy/skills/remotion-best-practices/rules/display-captions.md
+229	0	.codebuddy/skills/remotion-best-practices/rules/extract-frames.md
+152	0	.codebuddy/skills/remotion-best-practices/rules/fonts.md
+58	0	.codebuddy/skills/remotion-best-practices/rules/get-audio-duration.md
+68	0	.codebuddy/skills/remotion-best-practices/rules/get-video-dimensions.md
+58	0	.codebuddy/skills/remotion-best-practices/rules/get-video-duration.md
+138	0	.codebuddy/skills/remotion-best-practices/rules/gifs.md
+130	0	.codebuddy/skills/remotion-best-practices/rules/images.md
+67	0	.codebuddy/skills/remotion-best-practices/rules/import-srt-captions.md
+68	0	.codebuddy/skills/remotion-best-practices/rules/lottie.md
+403	0	.codebuddy/skills/remotion-best-practices/rules/maps.md
+35	0	.codebuddy/skills/remotion-best-practices/rules/measuring-dom-nodes.md
+143	0	.codebuddy/skills/remotion-best-practices/rules/measuring-text.md
+98	0	.codebuddy/skills/remotion-best-practices/rules/parameters.md
+118	0	.codebuddy/skills/remotion-best-practices/rules/sequencing.md
+11	0	.codebuddy/skills/remotion-best-practices/rules/tailwind.md
+20	0	.codebuddy/skills/remotion-best-practices/rules/text-animations.md
+179	0	.codebuddy/skills/remotion-best-practices/rules/timing.md
+19	0	.codebuddy/skills/remotion-best-practices/rules/transcribe-captions.md
+122	0	.codebuddy/skills/remotion-best-practices/rules/transitions.md
+53	0	.codebuddy/skills/remotion-best-practices/rules/trimming.md
+171	0	.codebuddy/skills/remotion-best-practices/rules/videos.md
+6	1	package.json
+7157	0	pencil-welcome.pen
+1580	22	pnpm-lock.yaml
+4	0	remotion.config.ts
+
+--- 44d9793733e36dcef029d27000c62205203f265d | 2026-02-27 | chore: 升级多类依赖包至最新兼容版本
+0	45	.codebuddy/skills/remotion-best-practices/SKILL.md
+0	86	.codebuddy/skills/remotion-best-practices/rules/3d.md
+0	29	.codebuddy/skills/remotion-best-practices/rules/animations.md
+0	78	.codebuddy/skills/remotion-best-practices/rules/assets.md
+0	173	.codebuddy/skills/remotion-best-practices/rules/assets/charts-bar-chart.tsx
+0	100	.codebuddy/skills/remotion-best-practices/rules/assets/text-animations-typewriter.tsx
+0	108	.codebuddy/skills/remotion-best-practices/rules/assets/text-animations-word-highlight.tsx
+0	172	.codebuddy/skills/remotion-best-practices/rules/audio.md
+0	104	.codebuddy/skills/remotion-best-practices/rules/calculate-metadata.md
+0	75	.codebuddy/skills/remotion-best-practices/rules/can-decode.md
+0	58	.codebuddy/skills/remotion-best-practices/rules/charts.md
+0	141	.codebuddy/skills/remotion-best-practices/rules/compositions.md
+0	126	.codebuddy/skills/remotion-best-practices/rules/display-captions.md
+0	229	.codebuddy/skills/remotion-best-practices/rules/extract-frames.md
+0	152	.codebuddy/skills/remotion-best-practices/rules/fonts.md
+0	58	.codebuddy/skills/remotion-best-practices/rules/get-audio-duration.md
+0	68	.codebuddy/skills/remotion-best-practices/rules/get-video-dimensions.md
+0	58	.codebuddy/skills/remotion-best-practices/rules/get-video-duration.md
+0	138	.codebuddy/skills/remotion-best-practices/rules/gifs.md
+0	130	.codebuddy/skills/remotion-best-practices/rules/images.md
+0	67	.codebuddy/skills/remotion-best-practices/rules/import-srt-captions.md
+0	68	.codebuddy/skills/remotion-best-practices/rules/lottie.md
+0	403	.codebuddy/skills/remotion-best-practices/rules/maps.md
+0	35	.codebuddy/skills/remotion-best-practices/rules/measuring-dom-nodes.md
+0	143	.codebuddy/skills/remotion-best-practices/rules/measuring-text.md
+0	98	.codebuddy/skills/remotion-best-practices/rules/parameters.md
+0	118	.codebuddy/skills/remotion-best-practices/rules/sequencing.md
+0	11	.codebuddy/skills/remotion-best-practices/rules/tailwind.md
+0	20	.codebuddy/skills/remotion-best-practices/rules/text-animations.md
+0	179	.codebuddy/skills/remotion-best-practices/rules/timing.md
+0	19	.codebuddy/skills/remotion-best-practices/rules/transcribe-captions.md
+0	122	.codebuddy/skills/remotion-best-practices/rules/transitions.md
+0	53	.codebuddy/skills/remotion-best-practices/rules/trimming.md
+0	171	.codebuddy/skills/remotion-best-practices/rules/videos.md
+16	16	package.json
+1071	946	pnpm-lock.yaml
+
+--- 6b85b12dfde7da5af48d3eb9fdef7cbfa668b4f6 | 2026-02-27 | feat: 新增 sitemap 生成功能支持首页及后续扩展
+21	0	src/app/sitemap.ts
+
+--- 10fd51024abde096523995664984ace205dd4811 | 2026-02-27 | chore: 删除 pencil-welcome.pen 文件并移除相关组件与 UI 元素
+0	7157	pencil-welcome.pen
+0	5	pnpm-workspace.yaml
+
+--- c3427707c61cd4b792f1c8a2e4383b913097705d | 2026-02-27 | feat: 新增数据库集成配置及依赖，支持Drizzle-Kit与Markdown渲染
+11	0	drizzle.config.ts
+15	1	package.json
+1799	18	pnpm-lock.yaml
+137	0	src/app/blog/[slug]/page.tsx
+79	0	src/app/blog/page.tsx
+27	4	src/app/sitemap.ts
+87	0	src/components/blog/PostCard.tsx
+111	0	src/components/blog/PostContent.tsx
+2	0	src/components/blog/index.ts
+19	19	src/components/home/Footer.tsx
+6	0	src/db/index.ts
+38	0	src/db/schema.ts
+34	0	src/lib/blog.ts
+
+--- 0555f9674e80f43d12e4583301d835dab1c8a088 | 2026-02-27 | refactor: 重构公共组件结构，新增Navbar与Footer并统一导入路径
+3	3	src/app/blog/[slug]/page.tsx
+2	2	src/app/blog/page.tsx
+0	0	src/components/{home => common}/Footer.tsx
+5	4	src/components/{home => common}/Navbar.tsx
+2	0	src/components/common/index.ts
+10	3	src/components/home/TestimonialsSection/index.tsx
+2	2	src/components/home/index.ts
+
+--- c0508cfac79c0c8eae0e326379aeb2ff7181d3ad | 2026-02-27 | feat: 新增婚礼筹备Demo页面并集成多模块管理功能
+1554	0	src/app/demo/page.tsx
+8	2	src/components/home/HeroSection/index.tsx
+
+--- b452c1834a4656b442a024b85f62f7d7b9548c0d | 2026-02-27 | chore: 移除 Remotion 相关依赖及锁文件冗余项
+0	5	package.json
+23	1790	pnpm-lock.yaml
+0	4	remotion.config.ts
+
+--- b89a91bf8dad0ad964c92cec4876a557217dfdb5 | 2026-03-03 | feat: 新增 Better Auth 集成与安全实践指南
+175	0	.agents/skills/better-auth-best-practices/SKILL.md
+432	0	.agents/skills/better-auth-security-best-practices/SKILL.MD
+321	0	.agents/skills/create-auth-skill/SKILL.md
+212	0	.agents/skills/email-and-password-best-practices/SKILL.md
+479	0	.agents/skills/organization-best-practices/SKILL.md
+331	0	.agents/skills/two-factor-authentication-best-practices/SKILL.md
+1	0	.codebuddy/skills/better-auth-best-practices
+1	0	.codebuddy/skills/better-auth-security-best-practices
+1	0	.codebuddy/skills/create-auth-skill
+1	0	.codebuddy/skills/email-and-password-best-practices
+1	0	.codebuddy/skills/organization-best-practices
+1	0	.codebuddy/skills/two-factor-authentication-best-practices
+1	0	package.json
+989	2	pnpm-lock.yaml
+35	0	skills-lock.json
+4	0	src/app/api/auth/[...all]/route.ts
+156	0	src/app/login/page.tsx
+157	0	src/app/manage/dashboard/page.tsx
+7	0	src/app/manage/layout.tsx
+67	0	src/db/schema.ts
+3	0	src/lib/auth-client.ts
+18	0	src/lib/auth.ts
+25	0	src/proxy.ts
+
+--- 0296b4b84d81ea18c0650f905c58871f4f56f889 | 2026-03-18 | feat: 在Footer新增ICP备案号链接及样式优化
+10	0	src/components/common/Footer.tsx
+

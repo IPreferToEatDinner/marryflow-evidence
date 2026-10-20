@@ -1,0 +1,20 @@
+marryflow
+  commits : 30
+  first   : 2f2523de01d941bf72fb7c49ff0a12922b034dc6|2026-01-11T16:49:53+08:00|Initial commit from Create Next App
+  last    : 0296b4b84d81ea18c0650f905c58871f4f56f889|2026-03-18T15:07:53+08:00|feat: 在Footer新增ICP备案号链接及样式优化
+
+marryflow-backend
+  commits : 39
+  first   : 1f088a0a31ee94dde211bd3cf05884c50dd8167c|2026-03-22T18:06:30+08:00|feat: 初始化项目配置与依赖，新增数据库及环境配置
+  last    : 25da0440229b6b7eeefc4444eeb3d08f8bae5b51|2026-04-05T15:48:05+08:00|feat(auth): 扩展可信来源并支持本地管理后台地址
+
+marryflow-mobile
+  commits : 123
+  first   : b0774b71376a3c093d1c1625596b4bc9a8a5bc6d|2026-03-22T12:29:33+08:00|Initial commit
+  last    : a67bd05ed7b0efd11abd8a2bb86e54c271657f16|2026-04-05T15:06:50+08:00|docs: 放宽 NativeWind 限制并明确 JS 颜色引用规则
+
+marryflow-monorepo
+  commits : 813
+  first   : 933e23ea97aeb4b8e0646eb3ef6dfbf434f7eb4d|2026-04-05T17:32:07+08:00|feat: 初始化后端服务基础架构
+  last    : 108ce6a3494367a0be4da50c4c3f812e7be44291|2026-10-19T21:12:55+08:00|feat(分享页): 品牌 Logo 支持点击返回首页并优化图片可访问性
+
